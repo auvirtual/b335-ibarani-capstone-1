@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a id="navbar__logo"><span class="material-symbols-outlined" id="btnText_Fields_Alt">text_fields_alt</span>auna i.</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="./index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="tools.html" class="navbar__links">Tools</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="tools.html" class="navbar__links">Skills</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="contact.html" class="button">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+
+    <section class="slider-container">
+        <div class="slider-images">
+          <div class="slider-img">
+            <img src="images/1.png" alt="1" />
+            <h1>Bootstrap</h1>
+          </div>
+          <div class="slider-img">
+            <img src="images/2.png" alt="2" />
+            <h1>HTML</h1>
+          </div>
+          <div class="slider-img">
+            <img src="images/3.png" alt="3" />
+            <h1>CSS</h1>
+          </div>
+          <div class="slider-img active">
+            <img src="images/5.png" alt="4" />
+            <h1>JavaScript</h1>
+          </div>
+          <div class="slider-img">
+            <img src="images/5.png" alt="5" />
+            <h1>Sublime</h1>
+          </div>
+          <div class="slider-img">
+            <img src="images/6.png" alt="6" />
+            <h1>PhotoShop</h1>
+          </div>
+        </div>
+      </section>
+      <script src="jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+
+</body>
+</html>
+  
